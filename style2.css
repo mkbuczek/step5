@@ -1,0 +1,12 @@
+body{
+    font-size: 0.9em;
+}
+div{
+    margin-top: 200px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: black;
+}

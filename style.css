@@ -1,6 +1,8 @@
 body{
     user-select: none;
-    background-color: hsl(0, 0%, 90%);
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,23 +12,33 @@ body{
 }
 #buttonContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1px;
 }
 .btn{
-    background-color: gray;
+    background-color: white;
     border: 5px solid black;
     width: 100px;
     height: 100px;
+    border-radius: 15px;
 }
 .btn:hover{
-    filter: brightness(70%);
+    filter: brightness(90%);
+    cursor: pointer;
 }
 .btn:active{
     filter: brightness(50%);
 }
 #item{
-    font-size: 3em;
+    color: white;
+    font-size: 1.25em;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#itemContainer{
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px white;
 }
